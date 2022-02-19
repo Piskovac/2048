@@ -176,6 +176,8 @@ int main()
                 }
             
         }
+
+
         // kolaylýk olsun diye dikey diziler
           unsigned int dikeys[]  = { yer[0], yer1[0], yer2[0], yer3[0] };
           unsigned int dikeys1[] = { yer[1], yer1[1], yer2[1], yer3[1] };
@@ -337,346 +339,6 @@ int main()
         int aaaaaaaaaaaaaaaa = yer3[3];        
 
         
-       //sola öteleme
-        if (hamle == 1)
-        {
-            for (int c = 0; c <= 4; c++)
-            {
-
-                for (int c = 1; c <= 3; c++)
-                {
-
-                    if (yer[c - 1] == 0)
-                    {
-                        yer[c - 1] = yer[c];
-
-                        if (c < 2)
-                        {
-                            yer[c] = yer[c + 1];
-                        }
-                        yer[c] = 0;
-                    }
-                    if (yer1[c - 1] == 0)
-                    {
-                        yer1[c - 1] = yer1[c];
-                        if (c < 2)
-                        {
-                            yer1[c] = yer1[c + 1];
-                        }
-                        yer1[c] = 0;
-                    }
-                    if (yer2[c - 1] == 0)
-                    {
-                        yer2[c - 1] = yer2[c];
-                        if (c < 2)
-                        {
-                            yer2[c] = yer2[c + 1];
-                        }
-                        yer2[c] = 0;
-                    }
-                    if (yer3[c - 1] == 0)
-                    {
-                        yer3[c - 1] = yer3[c];
-                        if (c < 2)
-                        {
-                            yer3[c] = yer3[c + 1];
-                        }
-                        yer3[c] = 0;
-                    }
-                }
-            }
-        }
-       //sola toplama
-        if (hamle == 1)
-        {
-            for (int c = 1; c <= 3; c++)
-            {
-
-                if (yer[c - 1] == yer[c])
-                {
-                    yer[c - 1] += yer[c];
-                    yer[c] = 0;
-                }
-                if (yer1[c - 1] == yer1[c])
-                {
-                    yer1[c - 1] += yer1[c];
-                    yer1[c] = 0;
-                }
-                if (yer2[c - 1] == yer2[c])
-                {
-                    yer2[c - 1] += yer2[c];
-                    yer2[c] = 0;
-                }
-                if (yer3[c - 1] == yer3[c])
-                {
-                    yer3[c - 1] += yer3[c];
-                    yer3[c] = 0;
-                }
-            }
-        }
-        //saða öteleme
-        if (hamle == 2)
-        {
-            for (int b = 0; b <= 4; b++)
-            {
-
-                for (int c = 1; c <= 3; c++)
-                {
-
-                    if (yer[4 - c] == 0)
-                    {
-                        yer[4 - c] = yer[3 - c];
-                        if (c < 2)
-                        {
-                            yer[3 - c] = yer[2 - c];
-                        }
-                        yer[3 - c] = 0;
-                    }
-                    if (yer1[4 - c] == 0)
-                    {
-                        yer1[4 - c] = yer1[3 - c];
-                        if (c < 2)
-                        {
-                            yer1[3 - c] = yer1[2 - c];
-                        }
-                        yer1[3 - c] = 0;
-                    }
-                    if (yer2[4 - c] == 0)
-                    {
-                        yer2[4 - c] = yer2[3 - c];
-                        if (c < 2)
-                        {
-                            yer2[3 - c] = yer2[2 - c];
-                        }
-                        yer2[3 - c] = 0;
-                    }
-                    if (yer3[4 - c] == 0)
-                    {
-                        yer3[4 - c] = yer3[3 - c];
-                        if (c < 2)
-                        {
-                            yer3[3 - c] = yer3[2 - c];
-                        }
-                        yer3[3 - c] = 0;
-                    }
-                }
-            }
-        }
-        //saða toplama
-        if (hamle == 2)
-        {
-            for (int c = 1; c <= 3; c++)
-            {
-
-                if (yer[4 - c] == yer[3 - c])
-                {
-                    yer[4 - c] += yer[3 - c];
-                    yer[3 - c] = 0;
-                }
-                if (yer1[4 - c] == yer1[3 - c])
-                {
-                    yer1[4 - c] += yer1[3 - c];
-                    yer1[3 - c] = 0;
-                }
-                if (yer2[4 - c] == yer2[3 - c])
-                {
-                    yer2[4 - c] += yer2[3 - c];
-                    yer2[3 - c] = 0;
-                }
-                if (yer3[4 - c] == yer3[3 - c])
-                {
-                    yer3[4 - c] += yer3[3 - c];
-                    yer3[3 - c] = 0;
-                }
-            }
-        }
-        //aþaðý öteleme
-        if (hamle == 3)
-        {
-            for (int b = 0; b <= 4; b++)
-            {
-
-                for (int c = 1; c <= 3; c++)
-                {
-
-                    if (dikeys[4 - c] == 0)
-                    {
-                        dikeys[4 - c] = dikeys[3 - c];
-                        if (c < 2)
-                        {
-                            dikeys[3 - c] = dikeys[2 - c];
-                        }
-                        dikeys[3 - c] = 0;
-                    }
-                    if (dikeys1[4 - c] == 0)
-                    {
-                        dikeys1[4 - c] = dikeys1[3 - c];
-                        if (c < 2)
-                        {
-                            dikeys1[3 - c] = dikeys1[2 - c];
-                        }
-                        dikeys1[3 - c] = 0;
-                    }
-                    if (dikeys2[4 - c] == 0)
-                    {
-                        dikeys2[4 - c] = dikeys2[3 - c];
-                        if (c < 2)
-                        {
-                            dikeys2[3 - c] = dikeys2[2 - c];
-                        }
-                        dikeys2[3 - c] = 0;
-                    }
-                    if (dikeys3[4 - c] == 0)
-                    {
-                        dikeys3[4 - c] = dikeys3[3 - c];
-                        if (c < 2)
-                        {
-                            dikeys3[3 - c] = dikeys3[2 - c];
-                        }
-                        dikeys3[3 - c] = 0;
-                    }
-                }
-            }
-        }
-        //aþaðý toplama
-        if (hamle == 3)
-        {
-            for (int c = 1; c <= 3; c++)
-            {
-
-                if (dikeys[4 - c] == dikeys[3 - c])
-                {
-                    dikeys[4 - c] += dikeys[3 - c];
-                    dikeys[3 - c] = 0;
-                }
-                if (dikeys1[4 - c] == dikeys1[3 - c])
-                {
-                    dikeys1[4 - c] += dikeys1[3 - c];
-                    dikeys1[3 - c] = 0;
-                }
-                if (dikeys2[4 - c] == dikeys2[3 - c])
-                {
-                    dikeys2[4 - c] += dikeys2[3 - c];
-                    dikeys2[3 - c] = 0;
-                }
-                if (dikeys3[4 - c] == dikeys3[3 - c])
-                {
-                    dikeys3[4 - c] += dikeys3[3 - c];
-                    dikeys3[3 - c] = 0;
-                }
-            }
-            yer[0] = dikeys[0];
-            yer[1] = dikeys1[0];
-            yer[2] = dikeys2[0];
-            yer[3] = dikeys3[0];
-            yer1[0] = dikeys[1];
-            yer1[1] = dikeys1[1];
-            yer1[2] = dikeys2[1];
-            yer1[3] = dikeys3[1];
-            yer2[0] = dikeys[2];
-            yer2[1] = dikeys1[2];
-            yer2[2] = dikeys2[2];
-            yer2[3] = dikeys3[2];
-            yer3[0] = dikeys[3];
-            yer3[1] = dikeys1[3];
-            yer3[2] = dikeys2[3];
-            yer3[3] = dikeys3[3];
-        }
-        //yukarý öteleme
-        if (hamle == 4)
-        {
-            for (int c = 0; c <= 4; c++)
-            {
-
-                for (int c = 1; c <= 3; c++)
-                {
-
-                    if (dikeys[c - 1] == 0)
-                    {
-                        dikeys[c - 1] = dikeys[c];
-
-                        if (c < 2)
-                        {
-                            dikeys[c] = dikeys[c + 1];
-                        }
-                        dikeys[c] = 0;
-                    }
-                    if (dikeys1[c - 1] == 0)
-                    {
-                        dikeys1[c - 1] = dikeys1[c];
-                        if (c < 2)
-                        {
-                            dikeys1[c] = dikeys1[c + 1];
-                        }
-                        dikeys1[c] = 0;
-                    }
-                    if (dikeys2[c - 1] == 0)
-                    {
-                        dikeys2[c - 1] = dikeys2[c];
-                        if (c < 2)
-                        {
-                            dikeys2[c] = dikeys2[c + 1];
-                        }
-                        dikeys2[c] = 0;
-                    }
-                    if (dikeys3[c - 1] == 0)
-                    {
-                        dikeys3[c - 1] = dikeys3[c];
-                        if (c < 2)
-                        {
-                            dikeys3[c] = dikeys3[c + 1];
-                        }
-                        dikeys3[c] = 0;
-                    }
-                }
-            }
-        }
-        //yukarý toplama
-        if (hamle == 4)
-        {
-            for (int c = 1; c <= 3; c++)
-            {
-
-                if (dikeys[c - 1] == dikeys[c])
-                {
-                    dikeys[c - 1] += dikeys[c];
-                    dikeys[c] = 0;
-                }
-                if (dikeys1[c - 1] == dikeys1[c])
-                {
-                    dikeys1[c - 1] += dikeys1[c];
-                    dikeys1[c] = 0;
-                }
-                if (dikeys2[c - 1] == dikeys2[c])
-                {
-                    dikeys2[c - 1] += dikeys2[c];
-                    dikeys2[c] = 0;
-                }
-                if (dikeys3[c - 1] == dikeys3[c])
-                {
-                    dikeys3[c - 1] += dikeys3[c];
-                    dikeys3[c] = 0;
-                }
-            }
-            yer[0] = dikeys[0];
-            yer[1] = dikeys1[0];
-            yer[2] = dikeys2[0];
-            yer[3] = dikeys3[0];
-            yer1[0] = dikeys[1];
-            yer1[1] = dikeys1[1];
-            yer1[2] = dikeys2[1];
-            yer1[3] = dikeys3[1];
-            yer2[0] = dikeys[2];
-            yer2[1] = dikeys1[2];
-            yer2[2] = dikeys2[2];
-            yer2[3] = dikeys3[2];
-            yer3[0] = dikeys[3];
-            yer3[1] = dikeys1[3];
-            yer3[2] = dikeys2[3];
-            yer3[3] = dikeys3[3];
-        }
-
-
         //sola öteleme
         if (hamle == 1)
         {
@@ -774,6 +436,54 @@ int main()
                 }
             }
         }
+        //aþaðý öteleme
+        if (hamle == 3)
+        {
+            for (int b = 0; b <= 4; b++)
+            {
+
+                for (int c = 1; c <= 3; c++)
+                {
+
+                    if (dikeys[4 - c] == 0)
+                    {
+                        dikeys[4 - c] = dikeys[3 - c];
+                        if (c < 2)
+                        {
+                            dikeys[3 - c] = dikeys[2 - c];
+                        }
+                        dikeys[3 - c] = 0;
+                    }
+                    if (dikeys1[4 - c] == 0)
+                    {
+                        dikeys1[4 - c] = dikeys1[3 - c];
+                        if (c < 2)
+                        {
+                            dikeys1[3 - c] = dikeys1[2 - c];
+                        }
+                        dikeys1[3 - c] = 0;
+                    }
+                    if (dikeys2[4 - c] == 0)
+                    {
+                        dikeys2[4 - c] = dikeys2[3 - c];
+                        if (c < 2)
+                        {
+                            dikeys2[3 - c] = dikeys2[2 - c];
+                        }
+                        dikeys2[3 - c] = 0;
+                    }
+                    if (dikeys3[4 - c] == 0)
+                    {
+                        dikeys3[4 - c] = dikeys3[3 - c];
+                        if (c < 2)
+                        {
+                            dikeys3[3 - c] = dikeys3[2 - c];
+                        }
+                        dikeys3[3 - c] = 0;
+                    }
+                }
+            }
+        }
         //yukarý öteleme
         if (hamle == 4)
         {
@@ -823,6 +533,66 @@ int main()
                 }
             }
         }
+
+
+
+
+        //sola toplama
+        if (hamle == 1)
+        {
+            for (int c = 1; c <= 3; c++)
+            {
+
+                if (yer[c - 1] == yer[c])
+                {
+                    yer[c - 1] += yer[c];
+                    yer[c] = 0;
+                }
+                if (yer1[c - 1] == yer1[c])
+                {
+                    yer1[c - 1] += yer1[c];
+                    yer1[c] = 0;
+                }
+                if (yer2[c - 1] == yer2[c])
+                {
+                    yer2[c - 1] += yer2[c];
+                    yer2[c] = 0;
+                }
+                if (yer3[c - 1] == yer3[c])
+                {
+                    yer3[c - 1] += yer3[c];
+                    yer3[c] = 0;
+                }
+            }
+        }
+        //saða toplama
+        if (hamle == 2)
+        {
+            for (int c = 1; c <= 3; c++)
+            {
+
+                if (yer[4 - c] == yer[3 - c])
+                {
+                    yer[4 - c] += yer[3 - c];
+                    yer[3 - c] = 0;
+                }
+                if (yer1[4 - c] == yer1[3 - c])
+                {
+                    yer1[4 - c] += yer1[3 - c];
+                    yer1[3 - c] = 0;
+                }
+                if (yer2[4 - c] == yer2[3 - c])
+                {
+                    yer2[4 - c] += yer2[3 - c];
+                    yer2[3 - c] = 0;
+                }
+                if (yer3[4 - c] == yer3[3 - c])
+                {
+                    yer3[4 - c] += yer3[3 - c];
+                    yer3[3 - c] = 0;
+                }
+            }
+        }
         //aþaðý toplama
         if (hamle == 3)
         {
@@ -867,7 +637,249 @@ int main()
             yer3[2] = dikeys2[3];
             yer3[3] = dikeys3[3];
         }
+        //yukarý toplama
+        if (hamle == 4)
+        {
+            for (int c = 1; c <= 3; c++)
+            {
 
+                if (dikeys[c - 1] == dikeys[c])
+                {
+                    dikeys[c - 1] += dikeys[c];
+                    dikeys[c] = 0;
+                }
+                if (dikeys1[c - 1] == dikeys1[c])
+                {
+                    dikeys1[c - 1] += dikeys1[c];
+                    dikeys1[c] = 0;
+                }
+                if (dikeys2[c - 1] == dikeys2[c])
+                {
+                    dikeys2[c - 1] += dikeys2[c];
+                    dikeys2[c] = 0;
+                }
+                if (dikeys3[c - 1] == dikeys3[c])
+                {
+                    dikeys3[c - 1] += dikeys3[c];
+                    dikeys3[c] = 0;
+                }
+            }
+            yer[0] = dikeys[0];
+            yer[1] = dikeys1[0];
+            yer[2] = dikeys2[0];
+            yer[3] = dikeys3[0];
+            yer1[0] = dikeys[1];
+            yer1[1] = dikeys1[1];
+            yer1[2] = dikeys2[1];
+            yer1[3] = dikeys3[1];
+            yer2[0] = dikeys[2];
+            yer2[1] = dikeys1[2];
+            yer2[2] = dikeys2[2];
+            yer2[3] = dikeys3[2];
+            yer3[0] = dikeys[3];
+            yer3[1] = dikeys1[3];
+            yer3[2] = dikeys2[3];
+            yer3[3] = dikeys3[3];
+        }
+
+
+
+
+        //toplamlarýda ötelemek için
+        //sola öteleme
+        if (hamle == 1)
+        {
+            for (int c = 0; c <= 4; c++)
+            {
+
+                for (int c = 1; c <= 3; c++)
+                {
+
+                    if (yer[c - 1] == 0)
+                    {
+                        yer[c - 1] = yer[c];
+
+                        if (c < 2)
+                        {
+                            yer[c] = yer[c + 1];
+                        }
+                        yer[c] = 0;
+                    }
+                    if (yer1[c - 1] == 0)
+                    {
+                        yer1[c - 1] = yer1[c];
+                        if (c < 2)
+                        {
+                            yer1[c] = yer1[c + 1];
+                        }
+                        yer1[c] = 0;
+                    }
+                    if (yer2[c - 1] == 0)
+                    {
+                        yer2[c - 1] = yer2[c];
+                        if (c < 2)
+                        {
+                            yer2[c] = yer2[c + 1];
+                        }
+                        yer2[c] = 0;
+                    }
+                    if (yer3[c - 1] == 0)
+                    {
+                        yer3[c - 1] = yer3[c];
+                        if (c < 2)
+                        {
+                            yer3[c] = yer3[c + 1];
+                        }
+                        yer3[c] = 0;
+                    }
+                }
+            }
+        }
+        //saða öteleme
+        if (hamle == 2)
+        {
+            for (int b = 0; b <= 4; b++)
+            {
+
+                for (int c = 1; c <= 3; c++)
+                {
+
+                    if (yer[4 - c] == 0)
+                    {
+                        yer[4 - c] = yer[3 - c];
+                        if (c < 2)
+                        {
+                            yer[3 - c] = yer[2 - c];
+                        }
+                        yer[3 - c] = 0;
+                    }
+                    if (yer1[4 - c] == 0)
+                    {
+                        yer1[4 - c] = yer1[3 - c];
+                        if (c < 2)
+                        {
+                            yer1[3 - c] = yer1[2 - c];
+                        }
+                        yer1[3 - c] = 0;
+                    }
+                    if (yer2[4 - c] == 0)
+                    {
+                        yer2[4 - c] = yer2[3 - c];
+                        if (c < 2)
+                        {
+                            yer2[3 - c] = yer2[2 - c];
+                        }
+                        yer2[3 - c] = 0;
+                    }
+                    if (yer3[4 - c] == 0)
+                    {
+                        yer3[4 - c] = yer3[3 - c];
+                        if (c < 2)
+                        {
+                            yer3[3 - c] = yer3[2 - c];
+                        }
+                        yer3[3 - c] = 0;
+                    }
+                }
+            }
+        }
+        //aþaðý öteleme
+        if (hamle == 3)
+        {
+            for (int b = 0; b <= 4; b++)
+            {
+
+                for (int c = 1; c <= 3; c++)
+                {
+
+                    if (dikeys[4 - c] == 0)
+                    {
+                        dikeys[4 - c] = dikeys[3 - c];
+                        if (c < 2)
+                        {
+                            dikeys[3 - c] = dikeys[2 - c];
+                        }
+                        dikeys[3 - c] = 0;
+                    }
+                    if (dikeys1[4 - c] == 0)
+                    {
+                        dikeys1[4 - c] = dikeys1[3 - c];
+                        if (c < 2)
+                        {
+                            dikeys1[3 - c] = dikeys1[2 - c];
+                        }
+                        dikeys1[3 - c] = 0;
+                    }
+                    if (dikeys2[4 - c] == 0)
+                    {
+                        dikeys2[4 - c] = dikeys2[3 - c];
+                        if (c < 2)
+                        {
+                            dikeys2[3 - c] = dikeys2[2 - c];
+                        }
+                        dikeys2[3 - c] = 0;
+                    }
+                    if (dikeys3[4 - c] == 0)
+                    {
+                        dikeys3[4 - c] = dikeys3[3 - c];
+                        if (c < 2)
+                        {
+                            dikeys3[3 - c] = dikeys3[2 - c];
+                        }
+                        dikeys3[3 - c] = 0;
+                    }
+                }
+            }
+        }
+        //yukarý öteleme
+        if (hamle == 4)
+        {
+            for (int c = 0; c <= 4; c++)
+            {
+
+                for (int c = 1; c <= 3; c++)
+                {
+
+                    if (dikeys[c - 1] == 0)
+                    {
+                        dikeys[c - 1] = dikeys[c];
+
+                        if (c < 2)
+                        {
+                            dikeys[c] = dikeys[c + 1];
+                        }
+                        dikeys[c] = 0;
+                    }
+                    if (dikeys1[c - 1] == 0)
+                    {
+                        dikeys1[c - 1] = dikeys1[c];
+                        if (c < 2)
+                        {
+                            dikeys1[c] = dikeys1[c + 1];
+                        }
+                        dikeys1[c] = 0;
+                    }
+                    if (dikeys2[c - 1] == 0)
+                    {
+                        dikeys2[c - 1] = dikeys2[c];
+                        if (c < 2)
+                        {
+                            dikeys2[c] = dikeys2[c + 1];
+                        }
+                        dikeys2[c] = 0;
+                    }
+                    if (dikeys3[c - 1] == 0)
+                    {
+                        dikeys3[c - 1] = dikeys3[c];
+                        if (c < 2)
+                        {
+                            dikeys3[c] = dikeys3[c + 1];
+                        }
+                        dikeys3[c] = 0;
+                    }
+                }
+            }
+        }
 
         //hamle yeni sayý koymak için uygun mu
         validmove = 1;

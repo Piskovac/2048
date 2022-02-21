@@ -107,7 +107,23 @@ int main()
     unsigned int yer3[] = { 0,0,0,0 };
     bool tekmiciftmi = 0;
     bool validmove = 1;
-;
+    int a = yer[0];
+    int aa = yer[1];
+    int aaa = yer[2];
+    int aaaa = yer[3];
+    int aaaaa = yer1[0];
+    int aaaaaa = yer1[1];
+    int aaaaaaa = yer1[2];
+    int aaaaaaaa = yer1[3];
+    int aaaaaaaaa = yer2[0];
+    int aaaaaaaaaa = yer2[1];
+    int aaaaaaaaaaa = yer2[2];
+    int aaaaaaaaaaaa = yer2[3];
+    int aaaaaaaaaaaaa = yer3[0];
+    int aaaaaaaaaaaaaa = yer3[1];
+    int aaaaaaaaaaaaaaa = yer3[2];
+    int aaaaaaaaaaaaaaaa = yer3[3];
+
     while (true)
     {
         system("CLS");
@@ -321,22 +337,22 @@ int main()
         }
 
         //hamle uygun mu
-        int a = yer[0];
-        int aa = yer[1];
-        int aaa = yer[2];
-        int aaaa = yer[3];
-        int aaaaa = yer1[0];
-        int aaaaaa = yer1[1];
-        int aaaaaaa = yer1[2];
-        int aaaaaaaa = yer1[3];
-        int aaaaaaaaa = yer2[0];
-        int aaaaaaaaaa = yer2[1];
-        int aaaaaaaaaaa = yer2[2];
-        int aaaaaaaaaaaa = yer2[3];
-        int aaaaaaaaaaaaa = yer3[0];
-        int aaaaaaaaaaaaaa = yer3[1];
-        int aaaaaaaaaaaaaaa = yer3[2];
-        int aaaaaaaaaaaaaaaa = yer3[3];        
+        a = yer[0];
+        aa = yer[1];
+        aaa = yer[2];
+        aaaa = yer[3];
+        aaaaa = yer1[0];
+        aaaaaa = yer1[1];
+        aaaaaaa = yer1[2];
+        aaaaaaaa = yer1[3];
+        aaaaaaaaa = yer2[0];
+        aaaaaaaaaa = yer2[1];
+        aaaaaaaaaaa = yer2[2];
+        aaaaaaaaaaaa = yer2[3];
+        aaaaaaaaaaaaa = yer3[0];
+        aaaaaaaaaaaaaa = yer3[1];
+        aaaaaaaaaaaaaaa = yer3[2];
+        aaaaaaaaaaaaaaaa = yer3[3];        
 
         
         //sola öteleme
